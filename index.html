@@ -88,15 +88,17 @@
     font-family: serif;
   }
 
-  .shrink{
-    background: rgba(139, 137, 137, 0.5);
+  .shrink-navbar{
+    background: rgba(139, 137, 137, 0.9);
     padding-top: 10px;
     padding-bottom: 10px;
+    color: white;
   }
 
-  .unshrink{
+  .shrink-main{
     background: none;
-    padding-top: 250px;
+    height: 120px;
+    color: black;
   }
 
   </style>
@@ -240,19 +242,21 @@
 
   $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
-    $(".navbar").addClass("navbar-fixed-top");
-    $(".navbar").addClass("shrink");
-    $("#main").css("height", "150px");
-    $("#main").css("background", "none");
-    $(".intro-padding").hide();
-    
-  } else {
-    $("#main").css("background", "url('1.jpg')");
-    $("#main").css("height", "300px");
-    $(".navbar").removeClass("shrink");
-    $(".navbar").removeClass("navbar-fixed-top");
-  }
-});
+      $(".navbar").addClass("navbar-fixed-top");
+      $(".navbar").addClass("shrink-navbar");
+      // $("#main").addClass("shrink-main");
+      $("#main").css("height", "120px");
+      $("#main").css("background", "none");
+      $(".intro-padding").hide();
+
+    } else {
+      $("#main").css("background", "url('1.jpg')");
+      $("#main").css("height", "300px");
+      // $("#main").removeClass("shrink-main");
+      $(".navbar").removeClass("shrink-navbar");
+      $(".navbar").removeClass("navbar-fixed-top");
+    }
+  });
 
   </script>
 
