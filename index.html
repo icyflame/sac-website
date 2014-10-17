@@ -56,25 +56,50 @@
 		color: black;
 	}
 
-	.navbar a{
-		-webkit-transition: all 0.5s ease-out;
-		-moz-transition: all 0.5s ease-out;
-		-o-transition: all 0.5s ease-out;
-		transition: all 0.5s ease-out;
-	}
+  #main{
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
 
-	.navbar a:hover{
-		-webkit-transition: all 0.5s ease-out;
-		-moz-transition: all 0.5s ease-out;
-		-o-transition: all 0.5s ease-out;
-		transition: all 0.5s ease-out;
-	}
+  .navbar{
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
 
-	#content {
-		font-family: serif;
-	}
+  .navbar a{
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
 
-	</style>
+  .navbar a:hover{
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
+
+  #content {
+    font-family: serif;
+  }
+
+  .shrink{
+    background: rgba(139, 137, 137, 0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .unshrink{
+    background: none;
+    padding-top: 250px;
+  }
+
+  </style>
 
 </head>
 
@@ -102,21 +127,6 @@
 						<li><a href="#">Mentorship</a></li>
 						<li><a href="#">Yearbook</a></li>
 
-              <!--
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            -->
-
           </ul>
           <ul class="nav navbar-nav navbar-right">
           	<li><a href="#"><i style="font-size: 20px; " class="fa fa-twitter"></i></a></li>
@@ -130,11 +140,13 @@
 
   </div>
 
+  <span class="intro-padding">
+    <br/>
+  </span>
 
   <div class="container-fluid" id="content">
 
   	<h1> Heading </h1>
-
   	<p> Because headings are not enough! </p>	
 
   </div>
@@ -224,10 +236,26 @@
   	<p> Because headings are not enough! </p>	
   </div>
 
+  <script>
+
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+    $(".navbar").addClass("navbar-fixed-top");
+    $(".navbar").addClass("shrink");
+    $("#main").css("height", "150px");
+    $("#main").css("background", "none");
+    $(".intro-padding").hide();
+    
+  } else {
+    $("#main").css("background", "url('1.jpg')");
+    $("#main").css("height", "300px");
+    $(".navbar").removeClass("shrink");
+    $(".navbar").removeClass("navbar-fixed-top");
+  }
+});
+
+  </script>
+
 </body>
-
-<script>
-
-</script>
 
 </html>
