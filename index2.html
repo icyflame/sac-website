@@ -93,16 +93,6 @@
     font-family: serif;
   }
 
-  .header-list-1{
-    height: 450px;
-    overflow: scroll;
-  }
-
-  .header-list-2{
-    height: 450px;
-    overflow: scroll;
-  }
-
   .header-list-1 div:hover{
     padding-left: 20%;
     cursor: pointer;
@@ -112,19 +102,10 @@
     transition: all 0.8s ease-out; 
   }
 
-  .shrink-navbar{
-    background: rgba(139, 137, 137, 0.9);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
+  .overflowscroll{
+    height: 450px;
+    overflow: scroll;
   }
-
-  .shrink-main{
-    background: none;
-    height: 120px;
-    color: black;
-  }
-
   </style>
 
 </head>
@@ -279,11 +260,14 @@
 
 $(document).ready(function(){
 
+  $(".header-list-1").addClass("overflowscroll");
+
   $(".header-list-1 div").on("click", function(){
     // sweetAlert("You clicked a div!" + $(this).attr("data-holder"));
     $(".header-list-1").removeClass("col-md-4").addClass("col-md-2");
     $(".header-list-2").removeClass("col-md-4").addClass("col-md-8");
     $(".header-list-3").removeClass("col-md-4").addClass("col-md-2");
+    $(".header-list-2").addClass("overflowscroll");
     $(".header-list-2").fadeToggle();
     $(".header-list-2").load($(this).attr("data-holder") + ".html");
     $(".header-list-2").fadeToggle(1000);
