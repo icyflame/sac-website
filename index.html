@@ -10,51 +10,56 @@
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
-	<style>
+  <link rel="stylesheet" type="text/css" href="sweetalert.css">
 
-	body{
-		/*padding-top: 20px;*/
-		padding-bottom: 20px;
-	}
+  <script src="sweetalert.min.js"></script>
 
-	i{
-		padding-left: 5px;
-		padding-right: 5px;
-	}
+  <style>
 
-	#main{
-		background-image: url('1.jpg');
-		background-repeat: none;
-		background-attachment: fixed;
-		width: 100%;
-		height: 300px;
+  body{
+    /*padding-top: 20px;*/
+    padding-bottom: 20px;
+  }
 
-	}
+  i{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
-	.navbar{
-		padding-top: 250px;
-		color: white;
-		/*font-family: amblebold;*/
-	}
+  #main{
+    background-image: url('2.png');
+    background-repeat: none;
+    background-attachment: fixed;
+    width: 100%;
+    height: 230px;
 
-	.navbar-inner{
-		background: none;
-		border: none;
-		box-shadow: none;
-	}
+  }
 
-	.navbar-nav .active{
-		background-color: rgba(0, 0, 0, 0.2);
-	}
+  .navbar{
+    padding-top: 170px;
+    color: white;
+    /*font-family: amblebold;*/
+  }
 
-	.navbar a{
-		color: white;
-		/*opacity: 0.8;*/
-	}
+  .navbar-inner{
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
 
-	.navbar a:hover{
-		color: black;
-	}
+  .nav .active a{
+    background-color: white;
+    color: black;
+  }
+
+  .navbar a{
+    color: white;
+    /*opacity: 0.8;*/
+  }
+
+  .navbar a:hover{
+    color: black;
+  }
 
   #main{
     -webkit-transition: all 0.5s ease-out;
@@ -88,19 +93,19 @@
     font-family: serif;
   }
 
-  .shrink-navbar{
-    background: rgba(139, 137, 137, 0.9);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
+  .header-list-1 div:hover{
+    padding-left: 20%;
+    cursor: pointer;
+    -webkit-transition: all 0.8s ease-out;
+    -moz-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out; 
   }
 
-  .shrink-main{
-    background: none;
-    height: 120px;
-    color: black;
+  .overflowscroll{
+    height: 450px;
+    overflow: scroll;
   }
-
   </style>
 
 </head>
@@ -142,124 +147,135 @@
 
   </div>
 
-  <span class="intro-padding">
+  <div class="container-fluid">
+
+    <div class="col-md-4 header-list-1">
+
+      <div class="container-fluid" id="content" data-holder="first">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+
+     <div class="container-fluid" style="font-family:source_sans_problack_italic">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+     <div class="container-fluid" style="font-family:source_sans_proitalic">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+     <div class="container-fluid" style="font-family:source_sans_probold">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+     <div class="container-fluid" style="font-family:source_sans_proregular">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+     <div class="container-fluid" style="font-family:abeezeeitalic">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+     <div class="container-fluid" style="font-family:abeezeeregular">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+     <div class="container-fluid" style="font-family:amblebold">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+     <div class="container-fluid" style="font-family:ambleitalic">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+     <div class="container-fluid" style="font-family:bitstream_vera_sansroman">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+     <div class="container-fluid" style="font-family:bitstream_vera_sansoblique">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+     <div class="container-fluid" style="font-family:bitstream_vera_sansbold">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+     <div class="container-fluid" style="font-family:dosisbold">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+     <div class="container-fluid" style="font-family:dosislight">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+     <div class="container-fluid" style="font-family:dosisregular">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+     <div class="container-fluid" style="font-family:gandhi_sansregular">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+     <div class="container-fluid" style="font-family:gandhi_sansbold">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+     <div class="container-fluid" style="font-family:gandhi_sansitalic">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+     <div class="container-fluid" style="font-family:greyscalebasicregular">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+     <div class="container-fluid" style="font-family:greyscalebasicitalic">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+     <div class="container-fluid" style="font-family:greyscalebasicbold">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+     <div class="container-fluid" style="font-family:lintelregular">
+       <h1> Heading </h1>
+       <p> Because headings are not enough! </p>	
+     </div>
+
+   </div>
+
+   <div class="col-md-4 header-list-2" style="background: ; ">
     <br/>
     <br/>
-  </span>
-
-  <div class="container-fluid" id="content">
-
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-
+    <br/>
   </div>
 
-  <div class="container-fluid" style="font-family:source_sans_problack_italic">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-  </div>
-  <div class="container-fluid" style="font-family:source_sans_proitalic">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-  </div>
-  <div class="container-fluid" style="font-family:source_sans_probold">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-  </div>
-  <div class="container-fluid" style="font-family:source_sans_proregular">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-  </div>
-  <div class="container-fluid" style="font-family:abeezeeitalic">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-  </div>
-  <div class="container-fluid" style="font-family:abeezeeregular">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-  </div>
-  <div class="container-fluid" style="font-family:amblebold">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-  </div>
-  <div class="container-fluid" style="font-family:ambleitalic">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-  </div>
-  <div class="container-fluid" style="font-family:bitstream_vera_sansroman">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-  </div>
-  <div class="container-fluid" style="font-family:bitstream_vera_sansoblique">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-  </div>
-  <div class="container-fluid" style="font-family:bitstream_vera_sansbold">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-  </div>
-  <div class="container-fluid" style="font-family:dosisbold">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-  </div>
-  <div class="container-fluid" style="font-family:dosislight">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-  </div>
-  <div class="container-fluid" style="font-family:dosisregular">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-  </div>
-  <div class="container-fluid" style="font-family:gandhi_sansregular">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-  </div>
-  <div class="container-fluid" style="font-family:gandhi_sansbold">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-  </div>
-  <div class="container-fluid" style="font-family:gandhi_sansitalic">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-  </div>
-  <div class="container-fluid" style="font-family:greyscalebasicregular">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-  </div>
-  <div class="container-fluid" style="font-family:greyscalebasicitalic">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-  </div>
-  <div class="container-fluid" style="font-family:greyscalebasicbold">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
-  </div>
-  <div class="container-fluid" style="font-family:lintelregular">
-  	<h1> Heading </h1>
-  	<p> Because headings are not enough! </p>	
+  <div class="col-md-4" style="background: ; ">
+    <br/>
+    <br/>
+    <br/>
   </div>
 
-  <script>
+</div>
+<script>
 
-  $(window).scroll(function() {
-    if ($(document).scrollTop() > 50) {
-      $(".navbar").addClass("navbar-fixed-top");
-      $(".navbar").addClass("shrink-navbar");
-      // $("#main").addClass("shrink-main");
-      $("#main").css("height", "120px");
-      $("#main").css("background", "none");
-      // $(".intro-padding").hide();
+$(document).ready(function(){
 
-    } else {
-      $("#main").css("background", "url('1.jpg')");
-      $("#main").css("height", "300px");
-      // $("#main").removeClass("shrink-main");
-      $(".navbar").removeClass("shrink-navbar");
-      $(".navbar").removeClass("navbar-fixed-top");
-    }
+  $(".header-list-1").addClass("overflowscroll");
+
+  $(".header-list-1 div").on("click", function(){
+    // sweetAlert("You clicked a div!" + $(this).attr("data-holder"));
+    $(".header-list-1").removeClass("col-md-4").addClass("col-md-2");
+    $(".header-list-2").removeClass("col-md-4").addClass("col-md-8");
+    $(".header-list-3").removeClass("col-md-4").addClass("col-md-2");
+    $(".header-list-2").addClass("overflowscroll");
+    $(".header-list-2").fadeToggle();
+    $(".header-list-2").load($(this).attr("data-holder") + ".html");
+    $(".header-list-2").fadeToggle(1000);
   });
 
-  </script>
+});
+
+</script>
 
 </body>
 
