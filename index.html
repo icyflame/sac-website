@@ -131,7 +131,7 @@
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="#">Overview</a></li>
 						<li><a href="#">Annual Alumni Meet</a></li>
-						<li><a href="#">Mentorship</a></li>
+						<li><a class="load-col-1" href="#" data-holder="list-header-1">Mentorship</a></li>
 						<li><a href="#">Yearbook</a></li>
 
           </ul>
@@ -151,131 +151,56 @@
 
     <div class="col-md-4 header-list-1">
 
-      <div class="container-fluid" id="content" data-holder="first">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
+      What?
 
-     <div class="container-fluid" style="font-family:source_sans_problack_italic">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
-     <div class="container-fluid" style="font-family:source_sans_proitalic">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
-     <div class="container-fluid" style="font-family:source_sans_probold">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
-     <div class="container-fluid" style="font-family:source_sans_proregular">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
-     <div class="container-fluid" style="font-family:abeezeeitalic">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
-     <div class="container-fluid" style="font-family:abeezeeregular">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
-     <div class="container-fluid" style="font-family:amblebold">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
-     <div class="container-fluid" style="font-family:ambleitalic">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
-     <div class="container-fluid" style="font-family:bitstream_vera_sansroman">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
-     <div class="container-fluid" style="font-family:bitstream_vera_sansoblique">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
-     <div class="container-fluid" style="font-family:bitstream_vera_sansbold">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
-     <div class="container-fluid" style="font-family:dosisbold">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
-     <div class="container-fluid" style="font-family:dosislight">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
-     <div class="container-fluid" style="font-family:dosisregular">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
-     <div class="container-fluid" style="font-family:gandhi_sansregular">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
-     <div class="container-fluid" style="font-family:gandhi_sansbold">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
-     <div class="container-fluid" style="font-family:gandhi_sansitalic">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
-     <div class="container-fluid" style="font-family:greyscalebasicregular">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
-     <div class="container-fluid" style="font-family:greyscalebasicitalic">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
-     <div class="container-fluid" style="font-family:greyscalebasicbold">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
-     <div class="container-fluid" style="font-family:lintelregular">
-       <h1> Heading </h1>
-       <p> Because headings are not enough! </p>	
-     </div>
+      <br/>
+      <br/>
+      <br/>
 
-   </div>
+    </div>
 
-   <div class="col-md-4 header-list-2" style="background: ; ">
-    <br/>
-    <br/>
-    <br/>
+    <div class="col-md-4 header-list-2" style="background: ; ">
+
+      Why?
+      <br/>
+      <br/>
+      <br/>
+    </div>
+
+    <div class="col-md-4" style="background: ; ">
+      How?
+      <br/>
+      <br/>
+      <br/>
+    </div>
+
   </div>
+  <script>
 
-  <div class="col-md-4" style="background: ; ">
-    <br/>
-    <br/>
-    <br/>
-  </div>
+  $(document).ready(function(){
 
-</div>
-<script>
+    $(".header-list-1").addClass("overflowscroll");
 
-$(document).ready(function(){
+    $(".load-col-1").on("click", function(){
 
-  $(".header-list-1").addClass("overflowscroll");
+      $(".header-list-1").load($(this).attr("data-holder") + ".html");
 
-  $(".header-list-1 div").on("click", function(){
-    // sweetAlert("You clicked a div!" + $(this).attr("data-holder"));
-    $(".header-list-1").removeClass("col-md-4").addClass("col-md-2");
-    $(".header-list-2").removeClass("col-md-4").addClass("col-md-8");
-    $(".header-list-3").removeClass("col-md-4").addClass("col-md-2");
-    $(".header-list-2").addClass("overflowscroll");
-    $(".header-list-2").hide();
-    $(".header-list-2").load($(this).attr("data-holder") + ".html");
-    $(".header-list-2").fadeToggle(1000);
+    });
+
+    $(".header-list-1 div").on("click", function(){
+      sweetAlert("You clicked a div!" + $(this).attr("data-holder"));
+      $(".header-list-1").removeClass("col-md-4").addClass("col-md-2");
+      $(".header-list-2").removeClass("col-md-4").addClass("col-md-8");
+      $(".header-list-3").removeClass("col-md-4").addClass("col-md-2");
+      $(".header-list-2").addClass("overflowscroll");
+      $(".header-list-2").hide();
+      $(".header-list-2").load($(this).attr("data-holder") + ".html");
+      $(".header-list-2").fadeToggle(1000);
+    });
+
   });
 
-});
-
-</script>
+  </script>
 
 </body>
 
