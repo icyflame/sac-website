@@ -17,3 +17,22 @@
  <h1> Heading </h1>
  <p> Because headings are not enough! </p>	
 </div>
+
+<script>
+
+$(document).ready(function(){
+
+  $(".header-list-1 div").on("click", function(){
+    sweetAlert("You clicked a div!" + $(this).attr("data-holder"));
+    $(".header-list-1").removeClass("col-md-4").addClass("col-md-2");
+    $(".header-list-2").removeClass("col-md-4").addClass("col-md-8");
+    $(".header-list-3").removeClass("col-md-4").addClass("col-md-2");
+    $(".header-list-2").addClass("overflowscroll");
+    $(".header-list-2").hide();
+    $(".header-list-2").load($(this).attr("data-holder") + ".html");
+    $(".header-list-2").fadeToggle(1000);
+  });
+
+});
+
+</script>
