@@ -1,19 +1,19 @@
-<div class="container-fluid" id="content" data-holder="first">
+<div class="col-1-divs container-fluid" data-holder="first">
+ <h1> Heading </h1>
+ <p> Because headings are not enough! </p>
+</div>
+
+<div class="col-1-divs container-fluid" style="font-family:source_sans_problack_italic">
  <h1> Heading </h1>
  <p> Because headings are not enough! </p>	
 </div>
 
-<div class="container-fluid" style="font-family:source_sans_problack_italic">
+<div class="col-1-divs container-fluid" style="font-family:source_sans_proitalic">
  <h1> Heading </h1>
  <p> Because headings are not enough! </p>	
 </div>
 
-<div class="container-fluid" style="font-family:source_sans_proitalic">
- <h1> Heading </h1>
- <p> Because headings are not enough! </p>	
-</div>
-
-<div class="container-fluid" style="font-family:source_sans_probold">
+<div class="col-1-divs container-fluid" style="font-family:source_sans_probold">
  <h1> Heading </h1>
  <p> Because headings are not enough! </p>	
 </div>
@@ -22,8 +22,15 @@
 
 $(document).ready(function(){
 
+  $(".col-1-divs").each(function(){
+
+    $(this).addClass("waves-effect");
+
+  });
+
+  Waves.displayEffect();
+
   $(".header-list-1 div").on("click", function(){
-    sweetAlert("You clicked a div!" + $(this).attr("data-holder"));
     $(".header-list-1").removeClass("col-md-4").addClass("col-md-2");
     $(".header-list-2").removeClass("col-md-4").addClass("col-md-8");
     $(".header-list-3").removeClass("col-md-4").addClass("col-md-2");
@@ -34,5 +41,7 @@ $(document).ready(function(){
   });
 
 });
+
+// sweetAlert("You clicked a div!" + $(this).attr("data-holder"));
 
 </script>
