@@ -131,10 +131,10 @@
 
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Overview</a></li>
-						<li><a href="#">Annual Alumni Meet</a></li>
-						<li><a class="load-col-1" href="#" data-holder="list-header-1">Mentorship</a></li>
-						<li><a href="#">Yearbook</a></li>
+						<li class="load-col-1 active"><a href="#">Overview</a></li>
+						<li class="load-col-1"><a href="#">Annual Alumni Meet</a></li>
+						<li class="load-col-1" data-holder="list-header-1"><a href="#">Mentorship</a></li>
+						<li class="load-col-1"><a href="#">Yearbook</a></li>
 
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -199,6 +199,14 @@
     $(".load-col-1").on("click", function(){
 
       $(".header-list-1").load($(this).attr("data-holder") + ".html");
+
+      $(".load-col-1").each(function(){
+
+        $(this).removeClass("active");
+
+      });
+
+      $(this).addClass("active");
 
     });
 
